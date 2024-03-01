@@ -1,0 +1,561 @@
+
+/* 
+
+--- reset css ----
+
+*/
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'iranyekanregular',Arial, Helvetica, sans-serif;
+}
+
+
+
+/* 
+
+--- component ---
+
+*/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.mt-4{
+    margin-top: -4rem;
+}
+
+/* 
+
+==== Header ====
+
+*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar{
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    word-spacing: -0.2rem;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.link{
+    display: flex;
+    margin-left: 2.5rem;
+}
+
+.link:last-child{
+    margin-left: 0;
+}
+
+.link a{
+    color: #303030;  
+}
+
+.link img{
+    display: inline-block;
+    width: .8rem;
+    margin-right: .8rem;
+}
+
+.link:last-child a{
+    margin-right: 2rem;
+    color: #28457b;
+    background-color: rgba(232,239,254,.6);
+    padding: 1rem 2.7rem;
+    border-radius: 10rem;
+    font-family: 'YekaBakhBold';
+}
+
+.link:last-child a:hover{
+    background-color: rgba(228,197,0,.15);
+}
+
+
+.menu{
+    display: none;
+}
+
+/* 
+
+==== Banner ====
+
+*/
+
+.banners{
+    margin: 7rem 0 5rem;
+}
+
+.banners__wrapper{
+    background: url(../images/wave.svg) , linear-gradient(135deg,#21254e,#2b4a83);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    padding: 12rem 6rem 7rem;
+}
+
+.banner{
+    color: #fff;
+    flex-basis: 50%;
+}
+
+.banner__title{
+    font-family: 'YekanBakhHeavy';
+    font-size: 3.2rem;
+}
+
+.banner__text{
+    font-family: 'iranyekanmedium';
+    font-size: 1.7rem;
+    line-height: 4rem;
+    word-spacing: -0.5rem;
+    padding: 2rem 0rem 5rem;
+}
+
+
+.banner__btns a{
+    color: #fff;
+    background: #435a8a 0 0 no-repeat padding-box;;
+    padding: .4rem 1.4rem;
+    border-radius: 1rem;
+    font-family: 'YekaBakhBold';
+    margin-left: .5rem;
+}
+
+.banner__btns a:first-child{
+    color: #000;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) 0 0 no-repeat padding-box;}
+
+.banner__img{
+    max-width: max-content;   
+}
+
+.banner__go-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3.8rem;
+}
+
+.banner__go-bottom div{
+    background: url(../images/arrowbottom.svg);
+    width: 16.5rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner__go-bottom div img{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 5rem;
+}
+
+
+/* 
+
+==== main style ===
+
+*/
+
+/* .payments{
+
+}
+
+.payment{
+} */
+
+.payment__wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.payment__img{
+    height: 51rem;
+    flex-basis: 40%;
+}
+
+.payment__img img{
+    display: block;
+    width: 47rem;
+    height: 49rem;
+    margin: 0 auto;
+}
+
+.payment__img--width>img{
+    width: 60rem;
+    height: 52rem;  
+    flex-basis: 55%;
+}
+
+.payment__info{
+    flex-basis: 50%;
+    margin: 5rem 0;
+    padding-top: 4rem;
+}
+
+.payment__info--width{
+    flex-basis: 41%;
+}
+
+.payment__title{
+    margin-bottom: .5rem;
+    color: #747480;
+    font-family: 'YekaBakhMedium';
+    font-size: 2.2rem;
+    font-weight: 500;
+
+}
+
+.payment__subtitle, .ability__title{
+    font-family: 'YekanBakhHeavy';
+    font-weight: 900;
+    color: #303030;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.payment__text, .ability__text, .ability__item-text{
+    font-family: 'YekaBakhMedium';
+    text-align: justify;
+    line-height: 4rem;
+    color: #303030;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid #dfe1e4;
+    max-width: 54rem;
+}
+
+.payment__btns{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.payment__btn{
+    padding: 0.8rem 1.4rem;
+    border-radius: 1rem;
+    font-family: 'iranyekanmedium';
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: #000;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) 0 0 no-repeat padding-box;
+}
+
+.payment__btn:last-child{
+    display: flex;
+    color: #28457b;
+    background: rgba(232,239,254,.6);
+}
+
+.payment__btn-svg{
+    width: 1.5rem;
+    margin-right:.5rem;
+}
+
+
+/* 
+
+
+====ability====
+
+
+*/
+
+
+
+/* .ability{
+
+} */
+
+.ability__wrapper{
+    display: flex;
+}
+
+.ability__info{
+    width: 35%;
+}
+
+.ability__text{
+    max-width: 34rem;
+    margin-top: 4.8rem;
+    border: none;
+}
+
+.ability__items{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ability__item{
+    padding: 2rem 3rem;
+    max-width: 43rem;
+}
+
+.ability__item:nth-child(1){
+    border-bottom: .1rem solid #dfe1e4;;
+}
+.ability__item:nth-child(2){
+    border-right: .1rem solid #dfe1e4;;
+}
+.ability__item:nth-child(3){
+    border-left: .1rem solid #dfe1e4;;
+}
+.ability__item:nth-child(4){
+    border-top: .1rem solid #dfe1e4;;
+}
+
+.ability__item-text{
+    border: none;
+}
+
+.ability__item-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.ability__item-head img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.ability__item-head h4{
+    padding-right: 2rem;
+    font-family: 'YekanBakhHeavy';
+    font-size: 2.4rem;
+}
+
+/* .ability__item-text{
+
+} */
+
+
+/* 
+
+
+====family====
+
+
+*/
+
+.family{
+    margin: 5rem 0;
+}
+
+.family__wrapper{
+    text-align: center;
+    padding: 5rem 0;
+    border: 1px solid #c3c6cd;
+    border-radius: 2rem;
+}
+
+.family__title{
+    font-family: 'YekanBakhHeavy';
+    color: #303030;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.family__subtitle{
+    margin-bottom: 2rem;
+    color: #747480;
+    font-family: 'YekaBakhMedium';
+    font-size: 2.2rem;
+}
+
+
+.family__btn{
+    padding: 0.8rem 1.4rem;
+    border-radius: 1rem;
+    font-family: 'iranyekanmedium';
+    font-size: 1.4rem;
+    color: #000;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) 0 0 no-repeat padding-box;
+}
+
+
+
+/* 
+
+
+====support====
+
+
+*/
+
+
+/* .support{
+
+} */
+
+.support__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    background: #fbf6f1;
+    border-radius: 3.5rem;
+    height: 7rem;
+}
+
+.support__tel{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.support__tel>span{
+   padding: 0 2rem; 
+}
+
+.support__tel-text{
+    font-family: 'YekanBakhHeavy';
+    color: #303030;
+    font-size: 2rem;
+}
+
+.support__tel-text span{
+    font-size: 2.4rem;
+    color: #21457f;
+    padding-right: .5rem;
+}
+
+.support__btn{
+    display: flex;
+    font-family: 'YekanBakhHeavy';
+    color: #21457f;
+    font-size: 2rem;
+}
+
+.support__btn a{
+    color: inherit;
+}
+
+.support__btn a:visited{
+    color: inherit;
+}
+
+.support__btn-svg{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* 
+
+
+==== footer ====
+
+
+*/
+
+.footer{
+    margin: 6rem 0 3rem;
+}
+
+.footer__wrapper{
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.footer__lists{
+    display: flex;
+    flex-basis: 65%;
+    justify-content: space-between;
+}
+
+.footer__list{
+ cursor: pointer;
+}
+
+.footer__list li:first-child{
+    font-family: 'YekanBakhHeavy';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    transition: all .2s ease-in;
+
+}
+
+.footer__list li:first-child:hover{
+    color: #21457f;
+}
+
+.footer__list-item{
+ margin-bottom: 1.5rem;
+}
+
+.footer__socials{
+    flex-basis: 35%;
+}
+
+.social-title{
+    font-family: 'YekanBakhHeavy';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a{
+    background-color: #eff4fe;
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    border-radius: 1.2rem;
+    transition: all .2s ease-in;
+}
+
+.social-icons a:hover{
+    opacity: .5;
+}

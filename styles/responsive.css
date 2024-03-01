@@ -1,0 +1,190 @@
+@media (max-width: 1200px){
+    .payment__img{
+        flex-basis: 50%;
+    }
+
+    .ability__wrapper{
+        display: block;
+    }
+
+    .ability__item{
+        border: none !important;
+    }
+
+    .ability__info{
+        width: 100%;
+    }
+
+    .ability__items{
+        width: 100%;
+    }
+
+    .ability__text{
+        max-width: none;
+        padding: 0 6%;
+    }
+
+    .support__tel-text{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px){
+    .link:last-child a{
+        display: none;
+    }
+    .banners{
+        margin-bottom: 0;
+    }
+    .banners__wrapper{
+        background: linear-gradient(135deg,#21254e,#2b4a83);
+        padding: 4.5rem 3rem 8rem;
+        display: block;
+    }
+    .banner{
+        text-align: center;
+    }
+    .banner:last-child{
+        display: none;
+    }
+    .payment__wrapper{
+        display: block;
+        margin: 0 auto;
+    }
+    .payment__img{
+        margin: 0 auto;
+    }
+    .payment__info{
+        margin: 0 2rem;
+    }
+    .payment__subtitle, .ability__title{
+        font-size: 2.4rem;
+    }
+    .ability__title{
+        margin-top: 4rem;
+    }
+    .payment__text ,.ability__text, .ability__item-text{
+        max-width: 100%;
+        line-height: 3.5rem;
+    }
+    .support__wrapper{
+        display: block;
+        background: none;
+        font-size: 1.9rem;
+    }
+    .support__btn{
+        width: max-content;
+        margin-top: 1rem;
+        padding: .5rem 2rem;
+        background: #fbf6f1;
+        border-radius: 3.5rem;
+    }
+    .footer__wrapper{
+        flex-direction: column;
+        margin-right: 3rem;
+    }
+    .footer__lists{
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        margin: 0;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .navbar{
+        height: 6rem;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .banners{
+        margin-top: 6.5rem;
+    }
+    .payment__info{
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .payment__text,.ability__text, .ability__item-text{
+        font-size: 1.4rem;
+    }
+
+    .ability__title{
+        text-align: center;
+    }
+
+    .ability__title-head{
+        font-size: 2rem;
+    }
+
+    .payment__btns{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+    .banner__title{
+        font-size: 2rem;
+        text-align: start;
+    }
+    
+    .banner__text{
+        font-size: 1.4rem;
+    }
+    .payment__img{
+        display: none;
+    }
+    .payment__btn:last-child{
+        padding: .8rem 2rem;
+    }
+
+    .ability__items{
+        grid-template-columns: 1fr;
+        
+    }
+    .ability__item-text{
+        max-width: 31rem;
+    }
+
+    .family__title{
+        font-size: 1.9rem;
+    }
+    .family__subtitle{
+        font-size: 1.6rem;
+    }
+    .footer__wrapper{
+        margin-right: 1rem;
+    }
+    .footer__list{
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+    .social-icons a{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 496px){
+    .support__tel>span{
+        display: none;
+     }
+     .support__tel{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .support__tel-text span{
+        font-size: 1.8rem;
+     }
+}
